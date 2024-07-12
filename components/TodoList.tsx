@@ -20,7 +20,7 @@ const TodoList = () => {
               className="cursor-pointer"
               onClick={() => dispatch(completeTodo(todo.id))}
             >
-              ✅
+              {todo.completed ? "❌" : "✅"}
             </span>
             <span
               onClick={() => dispatch(deleteTodo(todo.id))}
